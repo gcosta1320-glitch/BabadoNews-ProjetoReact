@@ -12,7 +12,7 @@ Gabriel Costa Lima Barbará
 
 ## Origem
 
-- Repositório do grupo (Parte 1): BabadoNews
+- Repositório do grupo (Parte 1): https://github.com/brunafgrd/babadonews
 - Página que fiz na Parte 1 e que foi unida ao index: `entretenimento.html`
 - Página extra que fiz na Parte 1, migrada como diferencial: `sobre.html` (rota `/sobre`)
 - Autor(a) do `index.html` original: Bruna Elen dos Santos Figueiredo
@@ -20,7 +20,7 @@ Gabriel Costa Lima Barbará
 
 ## Site publicado
 
-https://https://babadonews-gabrielcosta.netlify.app/
+https://babadonews-gabrielcosta.netlify.app/
 
 ## Tecnologias
 
@@ -97,5 +97,5 @@ src/
 
 ## Créditos
 
-- `index.html` original: BabadoNews (Parte 1)
+- `index.html` original: Bruna Elen dos Santos Figueiredo (Parte 1)
 - Imagens: arquivos do site do grupo, redimensionados para a web, e fotos do [Unsplash](https://unsplash.com)
