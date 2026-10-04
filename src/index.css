@@ -381,6 +381,29 @@ section[id] {
     font-size: 18px;
 }
 
+/* Novo na Landing: o Hero tem dois botões lado a lado */
+.botoes-destaque {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+.botao-secundario {
+    gap: 10px;
+
+    border: 1px solid rgba(255, 255, 255, 0.6);
+
+    background-color: transparent;
+}
+
+.botao-secundario:hover {
+    border-color: var(--cor-destaque);
+
+    background-color: transparent;
+    color: var(--cor-destaque);
+}
+
 .indicadores-destaque {
     position: absolute;
     z-index: 2;
@@ -602,6 +625,21 @@ section[id] {
     height: 170px;
 
     object-fit: cover;
+}
+
+/* Na grade do index a matéria principal ocupa duas linhas,
+   e as quatro secundárias ficam em 2x2 ao lado dela */
+.grade-index .materia-principal {
+    grid-row: span 2;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.grade-index .materia-principal img {
+    flex: 1;
+
+    min-height: 270px;
 }
 
 .conteudo-materia {
