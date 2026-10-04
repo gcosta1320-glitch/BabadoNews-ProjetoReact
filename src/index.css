@@ -681,6 +681,33 @@ section[id] {
 
 
 /* =================================
+   ENTRETENIMENTO (minha página)
+================================= */
+
+/* Fundo branco para separar visualmente da seção anterior */
+.secao-entretenimento {
+    background-color: var(--cor-branca);
+}
+
+.secao-entretenimento .noticias-laterais {
+    border: 1px solid var(--cor-borda);
+}
+
+.titulo-lateral {
+    margin-bottom: 18px;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Matéria principal + três secundárias na mesma linha */
+.grade-entretenimento {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+
+
+/* =================================
    CATEGORIAS
 ================================= */
 

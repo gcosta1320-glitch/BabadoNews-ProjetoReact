@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import Hero from '../sections/Hero.jsx'
 import Destaques from '../sections/Destaques.jsx'
+import Entretenimento from '../sections/Entretenimento.jsx'
 
 // A Landing Page só organiza a ordem das seções
 export default function LandingPage() {
@@ -19,6 +20,7 @@ export default function LandingPage() {
     <>
       <Hero />
       <Destaques />
+      <Entretenimento />
     </>
   )
 }
