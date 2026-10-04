@@ -711,8 +711,10 @@ section[id] {
    CATEGORIAS
 ================================= */
 
+/* padding em vez de margin: como a seção anterior tem fundo branco,
+   o espaço precisa ficar dentro desta seção (fundo cinza claro) */
 .secao-categorias {
-    margin-top: 30px;
+    padding-top: 45px;
 }
 
 .titulo-categorias {
