@@ -23,11 +23,17 @@ export default function Footer() {
 
           {/* Mesmos links do menu, vindos do mesmo array */}
           <div className="links-rodape">
-            {itensMenu.map((item) => (
-              <a href={item.link} key={item.link}>
-                {item.texto}
-              </a>
-            ))}
+            {itensMenu.map((item) =>
+              item.rota ? (
+                <Link to={item.rota} key={item.texto}>
+                  {item.texto}
+                </Link>
+              ) : (
+                <a href={item.link} key={item.texto}>
+                  {item.texto}
+                </a>
+              ),
+            )}
           </div>
 
           <div className="redes-sociais">
