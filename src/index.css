@@ -1056,12 +1056,14 @@ section[id] {
         flex-wrap: wrap;
     }
 
-    .cabecalho-descricao {
-        display: none;
+    /* Tablet e celular: só o logo fica no cabeçalho, centralizado */
+    .cabecalho-conteudo {
+        justify-content: center;
     }
 
+    .cabecalho-descricao,
     .cabecalho-manifesto {
-        margin-left: auto;
+        display: none;
     }
 
     .menu-site {
@@ -1096,6 +1098,16 @@ section[id] {
         grid-column: 1 / -1;
     }
 
+    /* Com a principal ocupando a largura toda, ela não precisa mais de duas linhas */
+    .grade-index .materia-principal {
+        grid-row: auto;
+    }
+
+    /* As três matérias secundárias de entretenimento ficam na mesma linha, sem buraco */
+    .grade-entretenimento {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     .grade-categorias {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1107,10 +1119,6 @@ section[id] {
 
     .cabecalho-site {
         padding: 20px 5%;
-    }
-
-    .cabecalho-manifesto {
-        display: none;
     }
 
     .logo-site img {
@@ -1127,8 +1135,18 @@ section[id] {
         min-height: 450px;
     }
 
+    /* Espaço extra embaixo para os indicadores não encostarem nos botões */
     .conteudo-destaque {
-        padding: 25px;
+        padding: 25px 25px 50px;
+    }
+
+    /* No celular os botões do Hero ficam um embaixo do outro, com a largura toda */
+    .botoes-destaque {
+        flex-direction: column;
+    }
+
+    .botoes-destaque .botao-materia {
+        justify-content: center;
     }
 
     .conteudo-destaque h1,
